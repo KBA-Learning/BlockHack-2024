@@ -12,7 +12,7 @@ console.log('Balance:', balance)
 let latestBlock = await provider.getBlockNumber()
 console.log('Latest Block:', latestBlock)
 
-const abi = readFileSync('../contracts/Storage.abi').toString()
+const abi = readFileSync('../../contracts/Storage.abi').toString()
 
 const contract = new Contract(
   '0x5FbDB2315678afecb367f032d93F642f64180aa3',
