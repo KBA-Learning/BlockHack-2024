@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "node": "hardhat node"
+    "node": "hardhat node",
+    "ignition": "hardhat ignition deploy ./ignition/modules/Storage.ts"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Kerala Blockchain Academy",
+  "license": "MIT",
   "devDependencies": {
+    "@nomicfoundation/hardhat-ignition": "^0.15.5",
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "hardhat": "^2.22.10",
     "ts-node": "^10.9.2",
