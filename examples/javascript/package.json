@@ -1,0 +1,14 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "node index.mjs"
+  },
+  "author": "Kerala Blockchain Academy",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "ethers": "^6.13.2"
+  }
+}
