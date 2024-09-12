@@ -26,7 +26,7 @@ int main()
     if (curl)
     {
         // Set the URL for the request
-        curl_easy_setopt(curl, CURLOPT_URL, "http://localhost:8545");
+        curl_easy_setopt(curl, CURLOPT_URL, "http://127.0.0.1:8545");
 
         // Set the request to POST
         curl_easy_setopt(curl, CURLOPT_POST, 1L);

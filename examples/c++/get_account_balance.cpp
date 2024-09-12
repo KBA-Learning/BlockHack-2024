@@ -17,7 +17,7 @@ int main()
     std::string response_data;
 
     // JSON data to send in POST request
-    std::string json_data = R"({"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":83})";
+    std::string json_data = R"({"jsonrpc":"2.0","method":"eth_getBalance","params":["0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266", "latest"],"id":1})";
 
     // Initialize libcurl
     curl_global_init(CURL_GLOBAL_DEFAULT);
@@ -26,7 +26,7 @@ int main()
     if (curl)
     {
         // Set the URL for the request
-        curl_easy_setopt(curl, CURLOPT_URL, "http://localhost:8545");
+        curl_easy_setopt(curl, CURLOPT_URL, "http://127.0.0.1:8545");
 
         // Set the request to POST
         curl_easy_setopt(curl, CURLOPT_POST, 1L);
