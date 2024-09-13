@@ -2,9 +2,9 @@ package main
 
 import (
 	"context"
-	"examples/go/helpers"
-	"examples/go/lib"
 	"fmt"
+	"snippets/go/helpers"
+	"snippets/go/lib"
 
 	"github.com/ethereum/go-ethereum/common"
 )
