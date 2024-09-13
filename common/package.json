@@ -1,8 +1,6 @@
 {
-  "name": "experiments",
+  "name": "common",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "node": "hardhat node",
     "ignition": "hardhat ignition deploy ./ignition/modules/Storage.ts"
