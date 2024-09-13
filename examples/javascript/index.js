@@ -1,16 +1,17 @@
 import { readFileSync } from 'fs'
 import { JsonRpcProvider, Contract } from 'ethers'
+import chalk from 'chalk'
 
 const provider = new JsonRpcProvider('http://127.0.0.1:8545')
 
 const signer = await provider.getSigner()
-console.log('Address:', signer.address)
+console.log(`Address: ${chalk.green(signer.address)}`)
 
 const balance = await provider.getBalance(signer.address)
-console.log('Balance:', balance)
+console.log(`Balance: ${chalk.green(balance)}`)
 
 let latestBlock = await provider.getBlockNumber()
-console.log('Latest Block:', latestBlock)
+console.log(`Latest Block: ${chalk.green(latestBlock)}`)
 
 const abi = readFileSync('../../common/contracts/Storage.abi').toString()
 
@@ -21,7 +22,7 @@ const contract = new Contract(
 )
 
 const trx = await contract.store('101', 'Hello, KBA!')
-console.log('Transaction Hash:', trx.hash)
+console.log(`Transaction Hash: ${chalk.green(trx.hash)}`)
 
 const value = await contract.collection('101')
-console.log('Value:', value)
+console.log(`Value: ${chalk.green(value)}`)
