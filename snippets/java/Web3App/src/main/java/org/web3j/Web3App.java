@@ -26,6 +26,6 @@ public class Web3App {
                         new DefaultGasProvider());
             System.out.println("Transaction Hash: " + GREEN
                         + storage.store("101", "Hello from Java ☕!").send().getTransactionHash() + RESET);
-            System.out.println("Greeting method result: " + GREEN + storage.collection("101").send() + RESET);
+            System.out.println("Value: " + GREEN + storage.collection("101").send() + RESET);
       }
 }
