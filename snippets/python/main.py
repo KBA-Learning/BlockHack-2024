@@ -22,7 +22,7 @@ def main():
         address="0x5FbDB2315678afecb367f032d93F642f64180aa3", abi=abi
     )
 
-    trx = contract.functions.store("101", "Hello, KBA!").transact(
+    trx = contract.functions.store("101", "Hello from Python 🐍!").transact(
         {"from": account.address}
     )
     print(f"Transaction Hash: \033[32m{trx.hex()}\033[0m")

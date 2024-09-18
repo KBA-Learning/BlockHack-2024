@@ -25,7 +25,7 @@ public class Web3App {
             Storage storage = Storage.load("0x5FbDB2315678afecb367f032d93F642f64180aa3", web3j, credentials,
                         new DefaultGasProvider());
             System.out.println("Transaction Hash: " + GREEN
-                        + storage.store("101", "Hello, KBA!").send().getTransactionHash() + RESET);
+                        + storage.store("101", "Hello from Java ☕!").send().getTransactionHash() + RESET);
             System.out.println("Greeting method result: " + GREEN + storage.collection("101").send() + RESET);
       }
 }

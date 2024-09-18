@@ -41,7 +41,7 @@ func main() {
 
 	fmt.Printf("Latest Block: \033[32m%d\033[0m\n", latest)
 
-	trx, err := instance.Store(auth, "101", "Hello, KBA!")
+	trx, err := instance.Store(auth, "101", "Hello from Go 🐹!")
 	if err != nil {
 		panic(err)
 	}
