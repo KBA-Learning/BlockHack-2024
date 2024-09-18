@@ -1,7 +1,19 @@
+OS := $(shell uname)
+
+ifeq ($(OS), Darwin)  # macOS
+    CC := clang++
+    CFLAGS := -std=c++11
+    LDFLAGS := -lcurl
+else  # Ubuntu or other Linux distributions
+    CC := g++
+    CFLAGS := -std=c++11
+    LDFLAGS := -lcurl
+endif
+
 account_balance:
-	@g++ get_account_balance.cpp -lcurl
+	@$(CC) get_account_balance.cpp $(CFLAGS) $(LDFLAGS)
 	@./a.out
 
 block_number:
-	@g++ get_block_number.cpp -lcurl
+	@$(CC) get_block_number.cpp $(CFLAGS) $(LDFLAGS)
 	@./a.out
