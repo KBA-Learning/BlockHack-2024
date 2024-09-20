@@ -6,8 +6,6 @@ import org.web3j.protocol.core.DefaultBlockParameterName;
 import org.web3j.protocol.http.HttpService;
 import org.web3j.tx.gas.DefaultGasProvider;
 
-import org.web3j.generated.contracts.Storage;
-
 public class Web3App {
       public static final String GREEN = "\033[0;32m";
       public static final String RESET = "\033[0m";
