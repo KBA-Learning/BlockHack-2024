@@ -1,4 +1,4 @@
-# Common
+# Snippets for JavaScript
 
 ## Prerequisites
 
@@ -12,14 +12,8 @@ Install dependencies:
 npm install
 ```
 
-Start a local Ethereum node:
+Interact with deployed Smart Contract:
 
 ```sh
-npm run node
-```
-
-Deploy the Storage smart contract:
-
-```sh
-npm run ignition
+node .
 ```
