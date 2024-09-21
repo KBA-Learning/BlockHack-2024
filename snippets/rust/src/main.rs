@@ -33,11 +33,11 @@ async fn main() -> Result<()> {
         provider,
     );
 
-    let builder = contract.store(String::from("101"), String::from("Hello from Rust 🦀!"));
+    let builder = contract.store(String::from("2015"), String::from("Hello from Rust 🦀!"));
     let trx = builder.send().await?;
     println!("Transaction Hash: \x1b[32m{}\x1b[0m", trx.tx_hash());
 
-    let result = contract.collection(String::from("101")).call().await?;
+    let result = contract.collection(String::from("2015")).call().await?;
     println!("Value: \x1b[32m{}\x1b[0m", result._0);
 
     Ok(())

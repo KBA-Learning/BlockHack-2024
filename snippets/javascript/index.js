@@ -21,8 +21,8 @@ const contract = new Contract(
   signer
 )
 
-const trx = await contract.store('101', 'Hello from JavaScript 🔰!')
+const trx = await contract.store('1995', 'Hello from JavaScript 🔰!')
 console.log(`Transaction Hash: ${chalk.green(trx.hash)}`)
 
-const value = await contract.collection('101')
+const value = await contract.collection('1995')
 console.log(`Value: ${chalk.green(value)}`)

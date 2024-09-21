@@ -41,14 +41,14 @@ func main() {
 
 	fmt.Printf("Latest Block: \033[32m%d\033[0m\n", latest)
 
-	trx, err := instance.Store(auth, "101", "Hello from Go 🐹!")
+	trx, err := instance.Store(auth, "2009", "Hello from Go 🐹!")
 	if err != nil {
 		panic(err)
 	}
 
 	fmt.Printf("Transaction Hash: \033[32m%s\033[0m\n", trx.Hash())
 
-	value, err := instance.Collection(nil, "101")
+	value, err := instance.Collection(nil, "2009")
 	if err != nil {
 		panic(err)
 	}
